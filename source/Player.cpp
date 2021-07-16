@@ -1,12 +1,10 @@
 #include "Player.h"
 
-//Constructor
 Player::Player() : state(0), s(0), moveCounter(0), moveBy(4.f)
 {
-	//loop to init textures, sprites
+	//init textures, sprites
 	for (int i = 0; i < 14; ++i)
 	{
-		//a,b,c,d to prevent copy&paste, it's required to pass std::string type anyways
 		std::string c, d, b = "soldier";
 		c = std::to_string(i);
 		d = ".png";
@@ -18,13 +16,12 @@ Player::Player() : state(0), s(0), moveCounter(0), moveBy(4.f)
 	}
 }
 
+//Passed int without variable just to overload for p2
 Player::Player(int) :s(0), moveCounter(0), moveBy(4.f)
 {
 	state = 4;
-	//loop to init textures, sprites
 	for (int i = 0; i < 14; ++i)
 	{
-		//a,b,c,d to prevent copy&paste, it's required to pass std::string type anyways
 		std::string c, d, b = "soldier";
 		c = std::to_string(i);
 		d = ".png";
