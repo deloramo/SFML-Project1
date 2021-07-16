@@ -12,8 +12,7 @@ class Player : public Object
 {
 private:
 	sf::Texture textures[14]; 
-	//Game class manages sprites, so no sprite declared here
-	//No sprite, no window pointer
+	//Game class manages sprites, so no sprite or window pointer declared here
 	Coord pos;
 	int state;
 	int s;
