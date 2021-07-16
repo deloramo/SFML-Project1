@@ -1,5 +1,5 @@
 #pragma once
-#include "Object.h" //I think this class shouldn't inherit from object instead it should be the other way. But im doing what im asked to do so.
+#include "Object.h" 
 class Coord : public Object 
 {
 public:
